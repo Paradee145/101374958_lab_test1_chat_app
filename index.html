@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat App</title>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="chat.js" defer></script>
+</head>
+<body>
+    <div>
+        <h2>Chat Room</h2>
+
+        <!-- ✅ Ensure these input fields exist -->
+        <input type="text" id="usernameInput" placeholder="Enter your username">
+        <input type="text" id="roomInput" placeholder="Enter room name">
+        <button onclick="joinRoom()">Join Room</button>
+
+        <div id="chatBox" style="border:1px solid black; width:300px; height:300px; overflow:auto;"></div>
+
+        <input type="text" id="messageInput" placeholder="Type your message">
+        <button onclick="sendMessage()">Send</button>
+    </div>
+</body>
+</html>
+
